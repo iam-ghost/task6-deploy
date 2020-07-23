@@ -7,4 +7,4 @@ else
 	sleep 50
 fi
 POD=$(kubectl get pod -l app=httpd -o jsonpath="{.items[0].metadata.name}")
-kubectl cp *.html $POD:/var/www/html/
+kubectl cp *.html $POD:/usr/local/apache2/htdocs/
