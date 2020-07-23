@@ -36,8 +36,6 @@ spec:
   selector:
     matchLabels:
       app: server
-  strategy:
-    type: Recreate
   template:
     metadata:
       labels:
